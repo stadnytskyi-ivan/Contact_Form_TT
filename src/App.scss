@@ -1,0 +1,67 @@
+.link {
+  position: relative;
+  color: #8643DC;
+  font-family:'Red Hat Display';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
+
+    @media(min-width: 768px) {
+      font-size: 18px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 38px;
+      bottom: 0;
+      left: 0;
+      background-color: #8643DC;
+
+        @media(min-width: 768px) {
+          width: 50px;
+        }
+    }
+}
+
+.section {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.section__text {
+  max-width: 512px;
+  color: #21232D;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+
+    @media(min-width: 768px) {
+      font-size: 36px;
+      line-height: 52px;
+    }
+}
+
+.section__email {
+  color: #8643DC;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+

@@ -1,0 +1,51 @@
+.contactForm__buttonsContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactForm__button {
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 1px solid #8643DC;
+  padding: 14px 38px;
+  background-color: #8643DC;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Red Hat Display';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @media(min-width: 768px) {
+    font-size: 18px;
+    padding: 18px 50px;
+  }
+    
+    &:hover {
+      background-color: #fff;
+      color: #8643DC;
+    }
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: start;
+}
+
+.buttons__extra {
+  cursor: pointer;
+}
+
+.attach__container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 30px;
+  width: 30px;
+}
